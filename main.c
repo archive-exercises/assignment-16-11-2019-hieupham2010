@@ -5,6 +5,16 @@
 bool in_asc_order(const int *arr, size_t arr_size)
 {
   /* code here */
+  int i;
+  int max = arr[0];
+  for(i = 1 ; i < arr_size ; i++) {
+	  if(arr[i] > max){
+		  max = arr[i];
+	  }
+	  else break;
+  }
+  if(i == arr_size)
+	  return true;
   return false;
 }
 
